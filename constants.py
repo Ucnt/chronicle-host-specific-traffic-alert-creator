@@ -10,7 +10,7 @@ DAYS_TO_GO_BACK     = 1
 
 # Rule information
 RULE_AUTHOR         = ""                   # Your name 
-RULE_NAME           = ""                   # Name of the rule a-z, A-Z, 0-9, _   e.g. http_unexpected_outbound or https_unexpected_outbound
+RULE_NAME           = ""                   # Name of the rule a-z, A-Z, 0-9, _   e.g. unexpected_http_outbound or unexpected_https_outbound
 RULE_DESCRIPTION    = ""                   # e.g. "Unespected HTTP Outbound" or "Unespected HTTPS Outbound"
 CREATED_DATE        = ""                   # Current date
 SEVERITY            = "Critical"           # Critical, High, Medium, Low

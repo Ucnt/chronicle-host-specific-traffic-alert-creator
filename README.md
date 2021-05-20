@@ -43,7 +43,7 @@ These steps follow the recommendation to initially look back 1 day in order to v
 
 2. Ensure that your constants.py file DAYS_TO_GO_BACK variable is set to 1
 
-3. To create your test HTTP rule, run: 
+3. To create your test HTTP rule, update the RULE_NAME and RULE_DESCRIPTION for HTTP, then run: 
 
    ```
    python3 -m detect.v2.create_host_connection_rule --protocol HTTP
@@ -51,7 +51,7 @@ These steps follow the recommendation to initially look back 1 day in order to v
   
    *Watch for prefixes and wildcard domains you missed, e.g. dozens of K8s nodes instead of a prefix*
 
-4. To create your test HTTPS (SSL) rule, run: 
+3. To create your test HTTPS (SSL) rule, update the RULE_NAME and RULE_DESCRIPTION for HTTPS, then run: 
 
    ```
    python3 -m detect.v2.create_host_connection_rule --protocol HTTPS
@@ -59,7 +59,7 @@ These steps follow the recommendation to initially look back 1 day in order to v
 
    *Watch for prefixes and wildcard domains you missed, e.g. dozens of K8s nodes instead of a prefix*
 
-5. Once the rules look correct and you think you have all of the prefixes and wildcard domains, delete both of the test rules by running a command like below for each:
+5. Go to the Chronicle UI and validate the rules. Once it looks like you haven't missed any prefixes or wildcard domains, delete both of the test rules by running a command like below for each:
 
    ```
    python3 -m detect.v2.delete_rule --rule_id {Rule id of the above rules, e.g. ru_12345678-1234-1234-1234-123456789012}
