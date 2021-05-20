@@ -72,8 +72,8 @@ These steps follow the recommendation to initially look back 1 day in order to v
 
 ## Post-Execution Steps
 
-   * For each rule, check through the domains for each host and validate that those domains are approved.
+   * For each rule, check through the domains for each host and validate that those domains are approved
 
-   * If any domains are NOT approved, investigate + remediate the issue and remove the domain from the rule.
+   * If any domains are NOT approved, investigate + remediate the issue and remove the domain from the rule
 
-   * Make the Chronicle rule live and enable alerting (if desired)
+   * Make the Chronicle rule live and, if desired, enable alerting
