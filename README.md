@@ -1,7 +1,7 @@
 # Chronicle GCP Host Specific Traffic Alert Creator
 
 ## Purpose
-This script creates host specific unpexpected traffic alerts in Chronicle based on historic Zeek HTTP and HTTPS (SSL) logs.
+This script creates host specific unexpected traffic alerts in Chronicle based on historic Zeek HTTP and HTTPS (SSL) logs.
 
 ## Chronicle Blog Post
 Chronicle has a [blog post, link to be updated when live](https://chroniclesec.medium.com/) discussing the below problem statement and solution.
@@ -9,14 +9,14 @@ Chronicle has a [blog post, link to be updated when live](https://chroniclesec.m
 ## Background
 If you are sending Zeek HTTP and HTTPS (SSL) logs to Chronicle and have setup [DHCP Correlation with Chronicle](https://github.com/Ucnt/chronicle-gcp-dhcp-log-creator), the next step is to create alerts on the traffic.  
 
-One of the primary alerts is when a host or host type reaches out to a domain that you weren't expecting, e.g. a compromised system, someone loading unapproves software, or one of many system changes that affect traffic.
+One of the primary alerts is when a host or host type reaches out to a domain that you weren't expecting, e.g. a compromised system, someone loading unapproved software, or one of many system changes that affect traffic.
 
-To do this, you can (through these scripts) create a list of known and approved domains that can be accessed and alert on access ouside of that approved list.
+To do this, you can (through these scripts) create a list of known and approved domains that can be accessed and alert on access outside of that approved list.
 
 ## Methodology
 
 - For the given protocol (HTTP or HTTPS)
-  - Create a base Chronicle rule with your subnet and ignored host configuratino.
+  - Create a base Chronicle rule with your subnet and ignored host configuration.
   - While True (infinite loop)
     - Run a historic search on the base rule
     - If there are results
@@ -26,7 +26,7 @@ To do this, you can (through these scripts) create a list of known and approved 
     - Else, end.
 
 
-## Setup/Pre-requisites
+## Setup/Prerequisites
 1. Read through the [blog post, link to be updated when live](https://chroniclesec.medium.com/), to understand the methodology
 2. Be a [Chronicle Security](https://chronicle.security/) customer with Zeek HTTP + HTTPS (SSL) logs
 3. Setup DHCP correlation with Chronicle through [these scripts](https://github.com/Ucnt/chronicle-gcp-dhcp-log-creator) or some other method
