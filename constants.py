@@ -18,7 +18,7 @@ SEVERITY            = "Critical"           # Critical, High, Medium, Low
 # Subnets to alert on
 APPLICABLE_SUBNETS          = [ "10.0.0.0/8", ]              # Subnets for hosts you want to alert on
 IGNORED_SUBNETS             = [ ]                            # Source subnets you don't want incldued, e.g. VPC peered subnets with zeek logs in Chronicle
-IGNORED_DEST_HOST_SUBNETS   = [ "169.254.169.254/32" ]       # Destination subnets to ignore, e..g metadata server
+IGNORED_DEST_HOST_SUBNETS   = [ "10.0.0.0/8", "169.254.169.254/32" ]       # Destination subnets to ignore, e.g. internal<=> internal + metadata server
 
 # Example hosts to ignore
 IGNORED_HOSTS_FOR_ALL = [
