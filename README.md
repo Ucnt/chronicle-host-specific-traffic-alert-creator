@@ -18,10 +18,10 @@ To do this, you can (through these scripts) create a list of known and approved 
 - For the given protocol (HTTP or HTTPS)
   - Create a base Chronicle rule with your subnet and ignored host configuration.
   - While True (infinite loop)
-    - Run a historic search on the base rule
+    - Run a historic search on the rule
     - If there are results
       - Add accessed domains to a per-GCP host list.
-      - Update the Chronicle rule with the hew host lists
+      - Update the rule with the hew host lists
       - Continue with the loop
     - Else, end.
 
