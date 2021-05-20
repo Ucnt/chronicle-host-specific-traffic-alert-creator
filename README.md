@@ -27,7 +27,7 @@ To do this, you can (through these scripts) create a list of known and approved 
 
 
 ## Setup/Pre-requisites
-1. Read through the [blog post, link to be updated when live](https://chroniclesec.medium.com/), to understand the methodology variable name adjustments in step 6
+1. Read through the [blog post, link to be updated when live](https://chroniclesec.medium.com/), to understand the methodology
 2. Be a [Chronicle Security](https://chronicle.security/) customer with Zeek HTTP + HTTPS (SSL) logs
 3. Setup DHCP correlation with Chronicle through [these scripts](https://github.com/Ucnt/chronicle-gcp-dhcp-log-creator) or some other method
 4. Download and setup [Chronicle's api-samples-python repository](https://github.com/chronicle/api-samples-python)
