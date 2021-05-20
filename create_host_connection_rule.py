@@ -111,7 +111,7 @@ def re_make_rule(protocol, host_destination_pairs=None):
 
 {IGNORED_HOSTS_FOR_ALL_LINES}
 
-{host_destination_pair_lines}
+{HOST_DESTINATION_PAIR_LINES}
       condition:
           $e1
 }}
