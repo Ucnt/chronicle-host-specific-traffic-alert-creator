@@ -48,6 +48,8 @@ These steps follow the recommendation to initially look back 1 day in order to v
    ```
    python3 -m detect.v2.create_host_connection_rule --protocol HTTP
    ```
+  
+   *Watch for prefixes and wildcard domains you missed, e.g. dozens of K8s nodes instead of a prefix*
 
 4. To create your test HTTPS (SSL) rule, run: 
 
@@ -55,7 +57,9 @@ These steps follow the recommendation to initially look back 1 day in order to v
    python3 -m detect.v2.create_host_connection_rule --protocol HTTPS
    ``` 
 
-5. Once the rules look correct, delete both of them by running a command like below for each:
+   *Watch for prefixes and wildcard domains you missed, e.g. dozens of K8s nodes instead of a prefix*
+
+5. Once the rules look correct and you think you have all of the prefixes and wildcard domains, delete both of the test rules by running a command like below for each:
 
    ```
    python3 -m detect.v2.delete_rule --rule_id {Rule id of the above rules, e.g. ru_12345678-1234-1234-1234-123456789012}
@@ -63,7 +67,7 @@ These steps follow the recommendation to initially look back 1 day in order to v
 
 6. Update the constants.py file DAYS_TO_GO_BACK variable to 30 (recommended value)
 
-7. Re-run steps 3 and 4.
+7. Re-run steps 3 and 4 to create your rules
 
 
 ## Post-Execution Steps
