@@ -11,7 +11,7 @@ If you are sending Zeek HTTP and HTTPS (SSL) logs to Chronicle and have setup [D
 
 One of the primary alerts is when a host or host type reaches out to a domain that you weren't expecting, e.g. a compromised system, someone loading unapproved software, or one of many system changes that affect traffic.
 
-To do this, you can (through these scripts) create a list of known and approved domains that can be accessed and alert on access outside of that approved list.
+To do this, you can (through these scripts) create a list of known and approved domains and alert on access outside of that approved list.
 
 ## Methodology
 
