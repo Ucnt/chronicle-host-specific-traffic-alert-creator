@@ -1,7 +1,7 @@
-# Chronicle GCP Host Specific Outbound Traffic Alert Creator
+# Chronicle GCP Host Specific Traffic Alert Creator
 
 ## Purpose
-This script creates host specific unpexpected outbound traffic alerts in Chronicle based on historic Zeek HTTP and HTTPS (SSL) logs.
+This script creates host specific unpexpected traffic alerts in Chronicle based on historic Zeek HTTP and HTTPS (SSL) logs.
 
 ## Chronicle Blog Post
 Chronicle has a [blog post, link to be updated when live](https://chroniclesec.medium.com/) discussing the below problem statement and solution.
