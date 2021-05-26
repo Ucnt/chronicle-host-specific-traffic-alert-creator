@@ -4,7 +4,7 @@
 This script creates host specific unexpected traffic alerts in Chronicle based on historic Zeek HTTP and HTTPS (SSL) logs.
 
 ## Chronicle Blog Post
-Chronicle has a [blog post, link to be updated when live](https://chroniclesec.medium.com/) discussing the below problem statement and solution.
+Chronicle has a [blog post](https://chroniclesec.medium.com/how-to-create-an-automated-traffic-allow-list-by-compute-engine-instance-type-in-chronicle-1df2fe9b4dfe) discussing the below problem statement and solution.
 
 ## Background
 If you are sending Zeek HTTP and HTTPS (SSL) logs to Chronicle and have setup [DHCP Correlation with Chronicle](https://github.com/Ucnt/chronicle-gcp-dhcp-log-creator), the next step is to create alerts on the traffic.  
@@ -27,7 +27,7 @@ To do this, you can (through these scripts) create a list of known and approved 
 
 
 ## Setup/Prerequisites
-1. Read through the [blog post, link to be updated when live](https://chroniclesec.medium.com/), to understand the methodology
+1. Read through the [blog post](https://chroniclesec.medium.com/how-to-create-an-automated-traffic-allow-list-by-compute-engine-instance-type-in-chronicle-1df2fe9b4dfe), to understand the methodology
 2. Be a [Chronicle Security](https://chronicle.security/) customer with Zeek HTTP + HTTPS (SSL) logs
 3. Setup DHCP correlation with Chronicle through [these scripts](https://github.com/Ucnt/chronicle-gcp-dhcp-log-creator) or some other method
 4. Download and setup [Chronicle's api-samples-python repository](https://github.com/chronicle/api-samples-python)
